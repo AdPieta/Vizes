@@ -110,10 +110,11 @@ ax2.axis('off')
 ax2.imshow(image)
 
 # Get credits
-fig.text(0.55, 0.03, '@AdPieta | Data @StatsBomb via @FbRef', alpha = 0.4,  family = 'Comic Sans', fontfamily = 'cursive')
+fig.text(0.5, 0.03, '@AdPieta | Data @StatsBomb via @FbRef', alpha = 0.4, fontfamily = 'monospace')
 
 # Create legend
 fig.legend(loc = 'upper right',
            frameon = False,
-           bbox_to_anchor = [0.9, 0.93])
+           bbox_to_anchor = [0.9, 0.93],
+           scatteryoffsets = [0.65, 0.5, 0.5])
 plt.show()
